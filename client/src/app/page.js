@@ -19,7 +19,7 @@ export default function Home() {
   const reviewCode = async () => {
     try {
       setloading(true)
-      const response = await axios.post(`http://localhost:4040/review-code`, { code }, { withCredentials: true });
+      const response = await axios.post(`https://ai-server-liard.vercel.app/review-code`, { code }, { withCredentials: true });
       setResult(response?.data);
     } catch (error) {
       throw new Error(error)
