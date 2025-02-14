@@ -6,7 +6,7 @@ dotenv.config({});
 
 
 const options = {
-    origin: "http://localhost:3000",
+    origin: "https://code-reviewer-flame.vercel.app",
     credentials: true
 }
 const app = express();
